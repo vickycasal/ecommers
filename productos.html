@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="style.css">
+        <title>AluraGeek</title>
+    </head>
+    <body class="app">
+        <header class="encabezado">
+            <nav class="menu">
+                <ul class="menuItem">
+                    <li class="logo-buscar">
+                        <img class="imagen-logo" src="./imagenes/Logo.png">       
+                        <input class="buscador" id="formularioBuscar" type="text" placeholder="qué deseas buscar?">                        
+                        <div class="botonLupa">
+                            <i class="fa fa-search icono"></i>
+                            <button class="boton-buscarlupa" id="boton-buscarlupa2"></i> </button>
+                        </div>
+                    </li>                          
+                    <li>
+                        <input class="login" type="button" value="Login">
+                    </li>                
+                </ul>
+            </nav>
+        </header>
+
+        <main class="contenido">
+            <section class="populares">
+                <div class="populares__items">
+                    <div class="populares__info">
+                        <div class="tituloPrincipal2">
+                            <h4 class="titulo2">Ver todos los productos</h4>
+                            <button class="btn-agregar">agregar producto</a>                         
+                        </div>
+                    </div>  
+                            
+                    <div class="starWars-contenido">                        
+                        <div class="starWars-card" >
+                            <img class="starWars-imagen" src="./imagenes/st1.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>         
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Producto XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion"> $60,00</div>                                     
+                            </div>
+                        </div>             
+                            <div class="starWars-card" >
+                            <img class="starWars-imagen" src="./imagenes/st2.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>          
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Producto XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion"> $60,00</div>
+                                                             
+                            </div>
+                        </div>
+                        
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/st3.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>          
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Producto XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion"> $60,00</div>                           
+                                
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/st4.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>         
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Producto XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion"> $60,00</div>
+                                                                  
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/st5.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>          
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Producto XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion"> $60,00</div>                            
+                                
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/st6.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>         
+                            <div class="starWars-base">                                
+                                    <h5 class="starWars-titulo">Producto XYZ</h5>                            
+                                <div class="starWars-descripcion"> $60,00</div>
+                                                        
+                            </div>
+                        </div>   
+                    </div>                     
+                    <div id="starWars-contenido-consola">
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/consola1.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>         
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Consola XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion">$60,00</div>                                                                                      
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/consola2.jpg"></img> 
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>           
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                  <h5 class="starWars-titulo">Control y consola XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion">$60,00</div>                                                                    
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/consola3.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>         
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Consola XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion">$60,00</div>                                  
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/consola4.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>          
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">control XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion">$60,00</div>                                                            
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/consola5.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>          
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Consola XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion">$60,00</div>                                     
+                            </div>
+                        </div>  
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/consola6.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>         
+                            <div class="starWars-base">      
+                                <div class="populares__card___header">                               
+                                    <h5 class="starWars-titulo">Game Boy color</h5>
+                                </div>                                    
+                                <div class="starWars-descripcion">$60,00</div>                             
+                            </div>
+                        </div>   
+                    </div>                                                
+                    <div class="starWars-contenido">
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/div1.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>            
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Camisa Atari</h5>
+                                </div>
+                            <div class="starWars-descripcion">$60,00</div>                                                                                                                        </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/div2.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>          
+                            <div class="starWars-base">
+                               <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Camisa SNES</h5>
+                                </div>
+                                <div class="starWars-descripcion">$60,00</div>                                              
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/div3.jpg"></img> 
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>         
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                   <h5 class="starWars-titulo">Control y consola XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion">$60,00</div>                                                              
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/div4.jpg"></img> 
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>            
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Control y consola XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion">$60,00</div>                                   
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/div5.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>         
+                            <div class="starWars-base">
+                                <div class="populares__card___header">
+                                    <h5 class="starWars-titulo">Control y consola XYZ</h5>
+                                </div>
+                                <div class="starWars-descripcion">$60,00</div>                                                               
+                            </div>
+                        </div>
+                        <div class="starWars-card">
+                            <img class="starWars-imagen" src="./imagenes/div6.jpg"></img>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                            <button class="btn-lapiz fa fa-pencil" id="tacho-Lapiz"></button>          
+                            <div class="starWars-base">
+                                <div class="populares__card___header"></div>                                    
+                                    <h5 class="starWars-titulo">Producto XYZ</h5> 
+                                </div>                               
+                                <div class="starWars-descripcion">$60,00</div>                               
+                            </div>
+                        </div>   
+                    </div>
+                </div>    
+            </section>
+            <section>
+                <table class="table">
+                    <thead  >
+                        
+                         <a class="nuevo"
+                            >Nuevo Producto</a>
+                            <button class="btn-tacho fa fa-trash" onclick="eliminar_elemento(this)"></button>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody data-table></tbody>
+                </table>
+                    <div class="modal-container modal--close">
+                        
+                           
+                            
+            
+                    
+            </section>
+    
+            <footer class="rodapie">
+                <img class="imagen" src="./imagenes/Logo.png">
+                <ul class="lista">
+                    <li><a>Quienes somos</a></li>
+                    <li><a>Politica de privacidad</a></li>
+                    <li><a>Programa de fidelidad</a></li>
+                    <li><a>Nuestras Tiendas</a></li>
+                    <li><a>Quiero ser franquiciado</a></li>
+                    <li><a>Anuncie aqui</a></li>                   
+                </ul>
+               <div class="formulario">
+                    <h5>Hable con nosotros</h5>
+                        <form class="formulario">
+                            <label for="nombre" class="form-rodapie"></label>
+                            <input class="cuadro-mensaje" type="text" placeholder="Nombre" id="nombre" required size="300">
+         
+                            <label for="mensaje" class="form-rodapie"></label>
+                            <input class="cuadro-mensaje" type="password" placeholder="contraseña" id="mensaje" size="300" >
+         
+                            <lebel for="btn-rodapie" class="form"></lebel>
+                            <input type="submit" value="Entrar" id="btn-rodapie" class="boton-rodapie">         
+                        </form>
+                </div>
+            </footer>        
+            <footer class="desarrollado">
+                <h6>Desarrollado por Virginia Casal *2022*  <h6>    
+            </footer>               
+        </main>       
+        <script src="./archivos java/btn.js"></script>         
+        <script type="module" src="./archivos java/agregarNuevoProducto.js"></script>
+        <script src="./archivos java/borrarProducto.js"></script>
+    </body>
+</html>

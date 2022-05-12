@@ -1,0 +1,1049 @@
+/*header*/
+.menuItem{
+    display:flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+
+.tituloPrincipal{
+    display:flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E5E5E5;
+}
+
+.logo-buscar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-content: center;
+   
+}
+
+.imagen-logo{
+    padding-right:20px;
+}
+
+.buscador{
+    background: #F5F5F5;
+    border-radius: 20px; 
+    border-width:0; 
+    width:300px;
+    text-align: center;
+    color:#A2A2A2;
+    font-size: small;
+}
+
+
+.botonLupa{
+    display: flex;
+    margin-top: 20px;
+}
+
+.boton-buscarlupa {
+    position:absolute;
+    opacity: 0;
+    right: 1rem; 
+    padding: 10px ;
+    
+}
+
+
+.icono{
+    position: absolute;
+    right: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.login{
+    background-color: white;
+    border-color: #2A7AE4;
+    border-width: 1px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    color:#2A7AE4;
+    width: 10rem;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 360px){
+    .buscador, .icono{
+        display:none;
+    }
+    .menuItem{
+        display:flex;
+        list-style: none;
+    }
+    .imagen-logo{
+       width: 80%;
+    }
+    .login{
+        background-color: white;
+        border-color: #2A7AE4;
+        border-width: 1px;
+        font-family: 'Raleway';
+        font-size: 10px;
+        color:#2A7AE4;
+        width: 8rem;
+        margin-right: 10px;
+        user-select: none;
+        cursor: pointer;
+    }
+   
+}  
+
+
+.banner{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.promocion{
+    position: absolute;
+    top:130px;
+    left:200px;
+    color: white;   
+    Font-style: Bold;
+    font-size: 52px;   
+    font-family: 'Raleway';
+}
+
+p{
+    position: absolute;
+    top:200px;
+    left:200px;
+    color: white;   
+}
+
+.btn{
+    position: absolute;
+    top: 250px;
+    left:200px;
+    background-color: #2A7AE4;
+    color: white;
+    font-size: 12px;
+    padding:10px 20px;
+    border-width: 0;
+}
+
+@media only screen and (max-width: 360px){
+    .imagen-banner{
+        width: 360px;
+        height: 190px;
+    }
+    
+    .promocion{
+        width: 328px;
+        left: 45px;
+        top:80px;
+        color: white;   
+        Font-style: Bold;
+        font-size: 30px; 
+        text-align: left; 
+        font-family: 'Raleway';
+    }
+    p{
+        width: 328px;
+        left:0px;
+        top:100px;
+        font-size: 10px;
+        color: white;  
+        padding-top: 20px; 
+    }
+    
+    #verConsola{
+        width: 100px;
+        left:45px;
+        top:150px;
+        background-color: #2A7AE4;
+        color: white;
+        text-align: center;
+        font-size: 11px;
+        border-width: 0;
+    }
+        
+
+   
+}  
+
+
+/*main*/
+
+.populares{
+    padding-bottom: 40px;
+    background-color: #E5E5E5;
+}
+
+.tituloPrincipal, .tituloPrincipal2{
+    display: flex;
+    justify-content: space-between;
+    padding:30px 0px 10px 100px;
+    align-content: center;
+
+}
+.titulo, .titulo2{
+    color:#464646;
+    Font-family:"Raleway";
+    Font-style: Bold;
+    Font-size: 32px;
+    Line-height: 38px;
+}
+
+.verTodo{
+    color: blue;
+    text-decoration: none;
+    padding-right: 100px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.verTodo:after{
+    content:"➔";
+    padding-left: 5px;
+}
+
+.starWars-contenido, #starWars-contenido-consola{
+    background: #fdfdfd;
+    display: grid;
+    grid-template-areas:
+    "imagen"
+    "base";
+    grid-template-columns:16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+    grid-template-rows: 10rem auto;     
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 100px;
+    background-color: #E5E5E5;
+    
+}
+
+
+.starWars-imagen{    
+    grid-area:imagen;    
+    width: 100%;
+    padding: 0px 10px;
+     
+}
+
+.starWars-base{
+    display: grid;
+    grid-area:base;
+    grid-row-gap: .5rem;
+    grid-template-areas:
+    "contenido"
+    "descripcion"
+    "precio";
+    grid-template-rows: 15px auto;
+    padding: .5rem;
+}
+
+.starWars-descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area:descripcion;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.starWars-btn{
+    grid-area: precio;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: blue;    
+}
+
+.starWars-titulo{
+    color: #333333;
+    font-size: 16px;
+}
+
+.btn-tacho, .btn-lapiz{
+    border: 0;
+    background-color:#E5E5E5;
+}
+
+@media only screen and (max-width: 360px){
+    .populares{
+        background-color: #E5E5E5;
+        
+    }
+    
+    .tituloPrincipal{
+        display: flex;
+        align-items: center;
+        margin-left: 0%;
+        width: 100%; 
+        justify-content: space-around;                      
+    }
+    .titulo{
+        color:#464646;
+        Font-family:"Raleway";
+        Font-style: Bold;
+        Font-size: 20px;
+        padding-right: 5px;
+    }
+    
+    .verTodo{
+        color: blue;
+        text-decoration: none;
+        align-items: center;
+        font-size: 10px;
+    }
+    
+    .verTodo:after{
+        content:"➔";
+        padding-left: 0px;
+    }
+    
+    .starWars-contenido, #starWars-contenido-consola{
+        background: #fdfdfd;
+        display: grid;
+        grid-template-areas:
+        "imagen"
+        "base";
+        grid-template-columns:50% 50%;   
+        background-color: #E5E5E5;
+        padding-bottom: 0px;       
+    }
+    .starWars-imagen{    
+        grid-area:imagen;    
+        width: 100%;
+        padding: 0px 10px;         
+    }    
+    .starWars-base{
+        display: grid;
+        grid-area:base;
+        grid-row-gap: .5rem;
+        grid-template-areas:
+        "contenido"
+        "descripcion"
+        "precio";        
+    }
+    
+    .starWars-descripcion{
+        display: flex;
+        flex-wrap: wrap;
+        grid-area:descripcion;
+        font-weight: bold;
+        font-size: 10px;
+        padding-top: 0px
+    }    
+    .starWars-btn{
+        grid-area: precio;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        color: blue;
+        font-size: 8px;    
+    }    
+    .starWars-titulo{
+        color: #333333;
+        font-size: 10px;
+    }
+
+    .tituloPrincipal2{
+        display:block;
+        justify-content: space-around;
+     }
+
+     .titulo2{
+        font-size: 25px;
+     }
+     .btn-agregar{
+         width: 60%;
+         font-size: 5px;
+     }
+}
+
+/*rodapie*/
+.rodapie{
+    display: flex;
+    justify-content: space-between;
+    background-color: #EAF2FD;
+    padding: 30px 100px;
+    align-items:center;    
+}
+
+.imagen{
+    padding-right:30px;
+}
+
+.lista{
+    width:100%;
+    list-style: none;
+    font-size:12px;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+.formulario{
+    display:block;
+    text-align: center; 
+    margin-left: 2%;
+    margin-right: 2%;   
+}
+
+.form-rodapie{
+    display: block;
+    font-size: 10px;
+    margin: 0 25% 15px;
+    align-items: center;
+}
+
+.cuadro-mensaje{
+    padding-bottom: 10px;
+    font-style: italic;
+    border: none;
+    width:100%;
+}
+
+#mensaje{
+    padding: 50px 0px;
+}
+
+.boton-rodapie{
+     padding: 10px;
+        width: 30%;
+        color: white;
+        background-color: #2A7AE4;
+        border: none;
+        font-size: 12px;
+}
+
+.desarrollado{
+    text-align: center;
+}
+
+@media only screen and (max-width: 360px){   
+    .rodapie{
+        display: block;
+        background-color: #EAF2FD;
+        align-items:center;    
+    }
+    .lista{
+        width:200%;
+        list-style: none;
+        font-size:11px;
+        padding-right: 100px;
+    }    
+    .formulario{
+        display:block;
+        text-align: center;          
+    }    
+    h5{
+        width: 200%;
+        font-weight: bold;
+        float: left;
+        margin-right: 0%;
+    }
+    .form-rodapie{
+        display: block;
+        align-items: center;
+    }
+    
+    .cuadro-mensaje{
+        padding-bottom: 10px;
+        font-style: italic;
+        border: none;
+        width:150%;
+        font-size: 12px;
+    }
+
+    .boton-rodapie{
+           padding: 5px 96px;
+           width: 100%;
+           color: white;
+           background-color: #2A7AE4;
+           border: none;
+           font-size: 12px;   
+           margin-top: 10px; 
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    .imagen{
+        padding-right:30px;
+    }
+    
+    .lista{
+        width:100%;
+        list-style: none;
+        font-size:12px;
+    }
+    
+    li{
+        padding-bottom: 10px;
+    }
+    
+    .formulario{
+        display:block;
+        text-align: center; 
+        margin-left: 2%;
+        margin-right: 2%;   
+    }
+    
+    .form-rodapie{
+        display: block;
+        font-size: 10px;
+        margin: 0 25% 15px;
+        align-items: center;
+    }
+    
+    .cuadro-mensaje{
+        padding-bottom: 10px;
+        font-style: italic;
+        border: none;
+        width:100%;
+    }
+    
+    #mensaje{
+        padding: 50px 0px;
+    }
+    
+    .boton-rodapie{
+         padding: 10px;
+            width: 30%;
+            color: white;
+            background-color: #2A7AE4;
+            border: none;
+            font-size: 12px;
+    }
+    
+    .desarrollado{
+        text-align: center;
+    }
+}    
+    
+/*productos similares*/
+.productoSeleccionado{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
+}
+
+.productoSeleccionado-img{
+    padding-right: 30px;
+    width: 50%;
+}
+
+.productoSeleccionado-texto{
+    display: block;
+    padding-top: 100px;
+
+}
+
+.productoSeleccionado-titulo{
+    font-size: 50px;
+    font-weight: bold;
+    color: #464646;
+}
+
+.precio{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.descripcion{
+    text-align: justify;
+}
+@media only screen and (max-width: 360px){   
+    .productoSeleccionado{
+        display: block;
+        margin: 100px;
+        margin-left: 5%;
+    }
+    .productoSeleccionado-img{
+        width: 150%;
+    }
+    .productoSeleccionado-titulo{
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        color: #464646;
+    }
+    .productoSeleccionado-texto{
+        padding-top: 5px;
+    } 
+    .precio{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .descripcion{
+        width: 100%;;
+        text-align: justify;
+}
+}
+
+@media only screen and (max-width: 768px){   
+    .productoSeleccionado-img{
+        width: 90%;
+    }
+}
+
+
+/*formulario login*/
+.contenido{
+    background-color: #E5E5E5;
+}
+
+.formulario-login{
+    display:block;
+    text-align: center; 
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 50px;
+}
+.formulario__label{
+    display: block;
+    font-size: 20px;
+    margin: 0 25% 15px;
+    align-items: center;
+}
+
+#password{
+    padding: 10px;
+    font-style: italic;
+    border: none;
+}
+
+#btn-entrar{
+    padding: 10px;
+    width: 78%;
+    align-items: center;
+    color: white;
+    font-size: medium;
+    background-color: #2A7AE4;
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.nombreProducto, .precioProducto{
+    padding-bottom: 30px;
+    padding-left: 10px;
+    font-size: 12px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.descripcionProducto{
+    padding-bottom: 50px;
+    font-size: 12px;
+    border:none;
+    padding-left: 10px;
+}
+
+#btn-producto{
+    padding: 10px;
+    width: 66%;
+    align-items: center;
+    color: white;
+    background-color: #2A7AE4;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+/*agregar producto*/
+    .contenido-producto{
+        background-color:#E5E5E5;
+    }
+    
+    .tituloAgergar{
+        margin: 30px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    .listaProductos{
+        display: flex;
+        margin-left: 65px;
+        list-style: none;
+    }
+    
+    .img-producto{
+        display: block;
+        padding: 15px;
+        background-color:white;
+        border-style: dashed;
+    }
+    .fraseProducto{
+        font-size: 14px;
+        color: #A2A2A2;
+    }            
+    
+    .imagenupload{
+        width: 10%;
+    }
+    
+    .o{
+        align-items: center;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    
+    .botones{
+        display: flex;
+    }
+    
+    .boton-buscar{
+        position:absolute;
+        color: #2A7AE4;
+        border-color: #2A7AE4;
+        padding:15px 5px;
+        background-color: #E5E5E5;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+    
+    .upload{
+        position: absolute;
+        margin-top: 40px;
+        font-size: 18px;
+        opacity: 0;          
+    }
+    
+@media only screen and (max-width: 360px){   
+    .formulario-login{
+        display:block;
+        align-content: flex-start;
+        margin:0%;
+        
+    }
+    .tituloAgergar{
+        font-size: 23px;
+        padding-top: 30px;
+    }   
+    .img-producto{
+        padding: 15px 60px;
+        background-color:white;
+        border-style: dashed;        
+    }
+   
+    .fraseProducto{
+        font-size: 12px;
+        color: #A2A2A2;
+    }            
+    
+    .imagenupload{
+        width: 30%;
+    }
+    
+    .o,.botones,.boton-buscar,.upload{
+        opacity: 0;  
+    }   
+} 
+
+/*estilo validacion*/
+.formularioCompleto {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 16px;
+	margin-left: 115px;
+    margin-top: 40px;
+	display: none;
+    color: #bb2929;
+}    
+
+@media only screen and (max-width: 768px){   
+    .formulario__input-error {
+        font-size: 12px;
+        margin-left: 0px;
+        margin-top: 40px;
+        display: none;
+        color: #bb2929;
+    }    
+    .formulario__mensaje p {
+        width: 100%;
+        font-size: 12px;
+        text-align: left;
+   }
+    
+} 
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+.formulario__mensaje {
+    grid-column: sapn 2;
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0px 15px;
+	border-radius: 3px;
+	display: none;
+    margin-top: 20px;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+    margin-left: 230px;
+    margin-top: 205px;
+}
+
+/*lista de productos*/
+.btn-agregar{      
+    background-color: #2A7AE4;
+    color: white;
+    font-size: 12px;    
+    border-width: 0;
+    margin-right: 110px;
+    padding:0px 30px;
+    margin-bottom: 10px;
+}
+
+/*de aca nueva validacion*/
+
+.agregarProducto {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label2 {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input2 {
+	position: relative;
+}
+
+.formulario__input2 {
+	width: 100%;
+    display: block;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input2:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error2 {
+	font-size: 14px;
+   display: none;
+    color: #bb2929;
+}
+
+.error-nombre{
+    padding: 210px 120px;
+}
+
+.error-producto{
+    padding: 280px 120px;
+}
+
+.error-descripcion{
+    padding: 360px 120px;
+}
+
+.formulario__input-error2-activo {
+	display: block;
+}
+
+.formulario__validacion-estado2 {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 14px;
+	opacity: 0;
+}
+
+.formulario__mensaje2 {
+	grid-column: span 2;
+}
+
+.formulario__grupo2-correcto .formulario__validacion-estado2 {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo2-incorrecto .formulario__label2 {
+	color: #bb2929;
+}
+
+.formulario__grupo2-incorrecto .formulario__validacion-estado2 {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo2-incorrecto .formulario__input2 {
+	border: 3px solid #bb2929;
+}
+
+.formulario__mensaje2 {
+    grid-column: span 2;
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0px 15px;
+	border-radius: 3px;
+	display: none;
+    margin-top: 20px;
+}
+
+.formulario__mensaje2-activo {
+	display: block;
+}
+
+.formulario__mensaje2 p {
+    margin-top: 475px;
+    margin-left: 220px;
+}
+
+/*tacho y lapiz*/
+#tacho-Lapiz{
+    color:black;
+    margin-left: 10px;
+}
+
+.nuevo{
+    margin-left: 100px;
+    padding: 10px;
+}
+  
+
+  
+
+
+
+
+
+
+
+
+

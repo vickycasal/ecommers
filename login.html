@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="style.css">
+        <title>AluraGeek</title>
+    </head>
+    <body class="app">
+        <header class="encabezado">
+            <nav class="menu">
+                <ul class="menuItem">
+                    <li class="logo-buscar">
+                        <img class="imagen-logo" src="./imagenes/Logo.png">       
+                        <input class="buscador" id="formularioBuscar" type="text" placeholder="qué deseas buscar?">                        
+                        <div class="botonLupa">
+                            <i class="fa fa-search icono"></i>
+                            <button class="boton-buscarlupa" id="boton-buscarlupa2"></i> </button>
+                        </div>
+                    </li>                          
+                    <li>
+                        <input class="login" type="submit" value="Login">
+                    </li>                
+                </ul>
+        </header>    
+        <main class="contenido">
+           <section class="formulario-login">
+               <h1>Inicio Sesion</h1>
+               <form id="formularioCompleto">
+                    <div class="formulario__grupo" id="grupo__correo">                                          
+                        <label for="correo" class="formulario__label"></label> 
+                        <div class="formulario__grupo-input">
+                            <input  type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" size="50"required >
+                            <i class="formulario__validacion-estado fa fa-times-circle"></i>
+                        </div>
+                            <p class="formulario__input-error">El correo debe contener un @ y al menos un punto</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__password">                                  
+                        <label for="password" class="formulario__label"></label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password" placeholder="ingrese aqui su contrasena" size="50" required data-tipo="password">
+                            <i class="formulario__validacion-estado fa fa-times-circle"></i>
+                        </div>
+                            <p class="formulario__input-error">La contraseña tiene que ser de 6 a 12 dígitos.</p>
+                    </div>
+                       
+                    <lebel for="btn-entrar" class="form"></lebel>
+                    <input type="submit" value="Entrar" id="btn-entrar">
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fa fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+
+               </form> 
+            </section>
+    
+            <footer class="rodapie">
+            <div class="logoLista">
+                <img class="imagen" src="./imagenes/Logo.png">
+                <ul class="lista">
+                    <li><a>Quienes somos</a></li>
+                    <li><a>Politica de privacidad</a></li>
+                    <li><a>Programa de fidelidad</a></li>
+                    <li><a>Nuestras Tiendas</a></li>
+                    <li><a>Quiero ser franquiciado</a></li>
+                    <li><a>Anuncie aqui</a></li>                   
+                </ul>
+            </div>
+                <div class="formulario">
+                   <h5>Hable con nosotros</h5>
+                    <form class="formulario">
+                        <label for="nombre" class="form-rodapie"></label>
+                        <input class="cuadro-mensaje" type="text" placeholder="Nombre" id="nombre" required size="300">
+             
+                        <label for="mensaje" class="form-rodapie"></label>
+                        <input class="cuadro-mensaje" type="password" placeholder="contraseña" id="mensaje" size="300" >
+             
+                        <lebel for="btn-rodapie" class="form"></lebel>
+                        <input type="submit" value="Entrar" id="btn-rodapie" class="boton-rodapie">
+                    </form>
+            </footer>  
+            <footer class="desarrollado">
+                <h6>Desarrollado por Virginia Casal *2022* </h6>                    
+            </footer>               
+        </main>
+        <script src="./archivos java/btn.js"></script>
+        <script src="./archivos java/validacionForm.js"></script>
+    </body>
+</html>
